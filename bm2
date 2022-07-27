@@ -1,0 +1,23 @@
+\documentclass{beamer}
+\usetheme{AnnArbor}
+\title{Your First \LaTeX{} Presentation}
+\author{latex-beamer.com}
+\date{\today}
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Outline frame
+ \begin{frame}{Outline}
+     \tableofcontents
+ \end{frame}
+
+%
+\end{document}
+
+
+
