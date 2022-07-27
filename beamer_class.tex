@@ -1,0 +1,155 @@
+% Creating a simple Title Page in Beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{AnnArbor}
+% \usetheme{CambridgeUS}
+% \usetheme{Antibes}
+
+% Title page details: 
+\title{Your First \LaTeX{} Presentation}
+% \subtitle{My-subtitle}
+\author{latex-beamer.com}
+% \institute{Online Beamer Tutorials}
+
+% Multiple authors
+% \author{First~Author \and 
+%   Second~Author \and
+%   Third~Author \and
+%   Fourth~Author \and
+%   Fifth~Author}
+
+% Two authors with different affiliations
+% \author{First Author\inst{1} \and Second Author\inst{2}}
+% \institute{\inst{1} Affiliation of the 1st author \and
+%  \inst{2} Affiliation of the 2nd author}
+
+\date{\today}
+
+% \logo{
+% \includegraphics[width=3cm]{logo.jpg}
+% }
+
+% Logo only on title page
+% \titlegraphic{
+%     \includegraphics[width=2cm]{logo.jpg}
+% }
+
+% Modify footer text: 
+% \title[Center text]{Your First \LaTeX{} Presentation}
+% \subtitle{My-subtitle}
+% \author[Left text]{latex-beamer.com}
+% \date[Right text]{\today}
+
+% Define a counter
+% \newcounter{currentenumi}
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% % Outline frame
+% \begin{frame}{Outline}
+%     \tableofcontents
+% \end{frame}
+
+% % % Presentation structure
+% % \section{Problem statement}
+% % \section{Existing results}
+% %     \subsection{Method 1}
+% %     \subsection{Method 2}
+% %     \subsection{Method 3}
+% % \section{Comparative study}
+% % \section*{References}
+
+% \begin{frame}
+% % to enforce entries in the table of contents
+% \end{frame}
+
+% % Abstract environment
+% \begin{abstract}
+%   content
+% \end{abstract}
+
+% \begin{frame}{Ordered Lists in Beamer}
+% \begin{enumerate}
+%     \item Item 1
+%     \item Item 2
+%     \item Item 3
+% \end{enumerate}
+% \end{frame}
+
+% \begin{frame}{Lists in multiple frames}{Frame 1}
+% \begin{enumerate}
+%     \item Item 1
+%     \item Item 2
+%     \item Item 3
+% % Store the actual item number
+%     \setcounter{currentenumi}{\theenumi}
+% \end{enumerate}
+% \end{frame}
+% \begin{frame}{Lists in multiple frames}{Frame 2}
+% \begin{enumerate}
+% % Use the previous stored item number
+% \setcounter{enumi}{\thecurrentenumi}
+%     \item Item 4
+%     \item Item 5
+% \end{enumerate}
+% \end{frame}
+
+% %Columns
+% \begin{frame}{Text and Image in beamer}
+%     \begin{columns}
+%     \column{0.4\textwidth}
+%         This is an example of text and image in the same slide using columns environment.
+%     \column{0.6\textwidth}
+%         \begin{figure}
+%         \centering
+%         \includegraphics[width=\textwidth]{nn.png}
+%         \caption{Neural Network with 5 neurons in the hidden layer. }
+%         \end{figure}
+%     \end{columns}
+% \end{frame}
+
+
+
+% \begin{frame}{Block environment}{Madrid theme}
+% \begin{block}{Block title}
+%     It can be useful to treat some content differently by putting it into a block. This can be done by using blocks!
+% \end{block}
+% \end{frame}
+
+% \begin{frame}{Basic Blocks}
+%     \begin{block}{Standard Block}
+%         This is a standard block.
+%     \end{block}
+%     \begin{alertblock}{Alert Message}
+%         This block presents alert message.
+%     \end{alertblock}
+%     \begin{exampleblock}{An example of typesetting tool}
+%         Example: MS Word, \LaTeX{}
+%     \end{exampleblock}
+% \end{frame}
+
+
+% \begin{frame}{My first table}
+% \begin{tabular}{|c||l||r|}
+% \hline
+%     centered & left-aligned & right-aligned \\ 
+% \hline
+%     A & C & E\\ 
+% \hline
+%     B & D & F\\ 
+% \hline
+% \end{tabular}
+% \end{frame}
+
+
+
+\end{document}
+
+
+
