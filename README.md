@@ -7,3 +7,5 @@ RGUKT Basar CSE E1S2 CS2702 ITWORKSHOP
   - https://www.overleaf.com/
 - Beamer Tutorial:
   - https://latex-beamer.com/tutorials/
+- Beamer Class Material
+  - https://www.overleaf.com/read/nfkcrjjnhfrh
