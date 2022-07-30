@@ -1,0 +1,35 @@
+open the terminal
+type below commands
+>sudo gedit /etc/apt/apt.conf
+its open the window
+
+
+copy below statements modify username and password
+
+save the document
+
+
+
+
+Acquire::http::Proxy "http://B19881:urpassword@hostelinternet.rgukt.ac.in:3128/";
+Acquire::https::Proxy "http://B19881:urpassword@hostelinternet.rgukt.ac.in:3128/";
+Acquire::socks::Proxy "http://B19881:urpassword@hostelinternet.rgukt.ac.in:3128/";
+Acquire::ftp::Proxy "http://B19881:urpassword@hostelinternet.rgukt.ac.in:3128/";
+
+
+
+
+to check working condition of terminal
+
+sudo apt-get update
+one hit as to come ....
+
+
+
+
+
+
+
+
+
+
