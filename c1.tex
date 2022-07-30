@@ -1,0 +1,148 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{Leaning Latex}
+\author{Mr. Sujoy Sarkar}
+\date{30-07-2022}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\section{Introduction to Latex}
+
+Briefly put, LaTeX is a text editing and typesetting platform designed
+especially for the use in Mathematics, Engineering, Science and Industry.
+However, it should be noted that LaTeX is not only restricted to these
+fields.
+\subsection{How to install Latex}
+\subsubsection{in windows}
+\paragraph{first install MikTex}
+\subparagraph{then install any editor like text studio, tex maker, textlive....}
+\subsubsection{in Linux}
+\paragraph{in ubuntu sudo apt-get install kile}
+
+\section{What is the purpose of LaTeX?}
+LaTeX is a tool that can be used to produce professional quality
+documents that employ symbolic representation, charts and notation for
+quantitative and mathematical ideas and concepts. It can also be used to
+compose high quality presentations in power points, publish journal papers
+and books.
+\section{What are its benefits?}
+
+
+For the working mathematician, engineer or scientist, LaTeX has a library
+of commands which relay standard symbolic and notational conventions
+which allow for ease in representing and conveying mathematical
+constructs in a clear and easy manner.
+
+\section{ Text fonts Representations}
+\begin{tiny}
+ Welcome to RGUKT
+\end{tiny} \\
+\newline
+\begin{small}
+ Welcome to RGUKT
+\end{small} \\
+\\
+\begin{large}
+ Welcome to RGUKT
+\end{large} \\
+\begin{Large}
+ Welcome to RGUKT
+\end{Large}
+\\
+\begin{LARGE}
+ Welcome to RGUKT
+\end{LARGE}
+\\
+\begin{huge}
+ Welcome to RGUKT
+\end{huge}
+\\
+\begin{Huge}
+ Welcome to RGUKT
+\end{Huge}
+\\
+\textit{Welcome to RGUKT}
+\\
+\textbf{Welcome to RGUKT}
+\\
+\textsc{Welcome to RGUKT}\ref{table1}
+\\
+\texttt{Welcome to RGUKT}
+\\
+\underline{Welcome to RGUKT}
+\\
+{\color{red}{Welcome to RGUKT}}
+\\
+
+{\color{black}{Welcome to RGUKT}
+
+
+\pagebreak
+
+
+\huge{Welcome to RGUKT} \\
+\Large{Welcome to RGUKT}
+
+
+
+\section{Table representation}
+
+
+\begin{table}[h]
+
+\centering
+\caption{This is my First Table}
+\begin{tabular}{|l |l |l |}
+ \hline
+ S.no & Subject1 & Subject2 \\
+ \hline
+ 1 & Maths & IT \\
+ \hline
+ 2 & Chem & Physics \\
+ \hline
+ 
+ 
+ 
+\end{tabular}
+\label{table1}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{FFFE65} 
+{\color[HTML]{CB0000} Sno}                       & {\color[HTML]{CB0000} s1} & {\color[HTML]{CB0000} s2} & {\color[HTML]{CB0000} s3} & {\color[HTML]{CB0000} total} \\ \hline
+\cellcolor[HTML]{9698ED}{\color[HTML]{009901} 1} & 90                        & 66                        & 0                         & {\color[HTML]{010066} xx}    \\ \hline
+\cellcolor[HTML]{9698ED}{\color[HTML]{009901} 2} & 0                         & 66                        & 55                        & {\color[HTML]{010066} xx}    \\ \hline
+\cellcolor[HTML]{9698ED}{\color[HTML]{009901} 3} & 00                        & 66                        & 5                         & {\color[HTML]{010066} xx}    \\ \hline
+\cellcolor[HTML]{9698ED}{\color[HTML]{009901} 4} & 00                        & 55                        & 565                       & {\color[HTML]{010066} xx}    \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{Maths Equations}
+ $(a+b)^2=a^2+b^2+2ab$
+ 
+
+$(\frac{a}{b})^2=\frac{a^2}{b^2}$
+
+\section{Images Representation}
+\begin{figure}[h]
+\centering
+ \includegraphics[scale=0.5]{index.jpeg}
+ \caption{this is first image}
+\end{figure}
+
+
+
+
+
+
+\end{document}
