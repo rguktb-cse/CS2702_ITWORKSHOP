@@ -1,0 +1,111 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+ struct node *next;
+ int data;
+ struct node *pre;
+};
+  struct node* creatnode(struct node*head)
+  { 
+     int n;
+    struct node *temp,*nn;
+     nn=(struct node*)malloc(sizeof(struct node));
+     scanf("%d",&n);
+     nn->data=n;
+     nn->next=NULL;
+     if(head==NULL)
+     {
+        head=nn;
+			  nn->pre=NULL;
+			}
+			else
+      { 
+          temp=head;
+			   while(temp->next!=NULL)
+         {
+            temp=temp->next;
+          }
+            temp->next=nn;
+             nn->pre=temp; 
+        }
+         return head;
+ }
+struct node* display(struct node*head)
+{
+					struct node *temp;
+					 temp=head;
+				while(temp!=NULL)
+				{   
+						printf("%d ",temp->data);
+						 temp=temp->next;
+        }
+          return head;
+}
+struct node* delete(struct node*head)
+{
+   struct node*temp;
+   int d;
+   temp=head;
+   printf("enter the element that to be deleted \n");
+   scanf("%d",&d);
+   while(temp!=NULL )
+   {
+      if(temp->data==d)
+      {
+          temp->pre->next=temp->next;
+           temp->next->pre=temp->pre;
+      }
+     else
+     { 
+       if(temp->next==NULL)
+       {
+         printf("element not found\n");
+       } 
+     }
+    temp=temp->next;
+}
+return head;
+} 
+struct node*sort(struct node*head)
+{
+  struct node*temp,*temp1;
+   int d;
+   for(temp=head;temp->next!=NULL;temp=temp->next)
+   {
+    for(temp1=temp->next;temp1!=NULL;temp1=temp1->next)
+    { 
+       if(temp->data>temp1->data)
+       { 
+             d=temp->data;
+             temp->data=temp1->data;
+             temp1->data=d;
+       }
+}
+}
+return head;
+}
+
+ int main()
+ {
+    struct node *head=NULL;
+    int n,val;
+    printf("enter the number of nodes required\n");
+    scanf("%d",&n);
+    printf(" Enter %d Elements\n",n);
+    while(n>0)
+    {
+      
+      head=creatnode(head);
+      n--;
+    }
+        head=display(head);
+        printf("\nThe deletion: \n");
+        head=delete(head);
+        printf("the list after deletion is:\n");
+        head=display(head);
+				printf("\nthe sorting of the list\n");
+				head=sort(head);
+				display(head);
+}
+    
